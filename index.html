@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Mood Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Daily Mood Tracker</h1>
+            <p>Track how you're feeling today by selecting your mood and adding notes!</p>
+        </header>
+
+        <section class="mood-selection">
+            <h2>Select Your Mood</h2>
+            <div class="mood-icons">
+                <i class="fas fa-smile" data-mood="happy"></i>
+                <i class="fas fa-sad-tear" data-mood="sad"></i>
+                <i class="fas fa-meh" data-mood="neutral"></i>
+                <i class="fas fa-angry" data-mood="angry"></i>
+                <i class="fas fa-smile-beam" data-mood="excited"></i>
+            </div>
+            <label for="mood-date">Select Date:</label>
+            <input type="date" id="mood-date" name="mood-date">
+        </section>
+
+        <section class="notes-section">
+            <h2>Write About Your Day</h2>
+            <textarea id="mood-notes" placeholder="Add any thoughts or feelings here..."></textarea>
+            <button type="submit" class="submit-btn">Save Mood</button>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Daily Mood Tracker.</p>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

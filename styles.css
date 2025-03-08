@@ -1,0 +1,151 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    transition: background-color 0.3s ease;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #e2dede;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #4A90E2;
+}
+
+header p {
+    color: #777;
+    font-size: 1rem;
+}
+
+/* Mood Selection */
+.mood-selection h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.mood-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.mood-icons i {
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.mood-icons i:hover {
+    transform: scale(1.2);
+}
+
+#mood-date {
+    padding: 10px;
+    width: 100%;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+/* Notes Section */
+textarea {
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    resize: vertical;
+    margin-bottom: 20px;
+    min-height: 120px;
+}
+
+button.submit-btn {
+    background-color: #4A90E2;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.submit-btn:hover {
+    background-color: #357ABD;
+}
+
+/* Mood-specific backgrounds */
+[data-mood="happy"] {
+    background-color: #FFD700;
+    /* Yellow */
+}
+
+[data-mood="sad"] {
+    background-color: #00BFFF;
+    /* Blue */
+}
+
+[data-mood="neutral"] {
+    background-color: #32CD32;
+    /* Green */
+}
+
+[data-mood="angry"] {
+    background-color: #FF6347;
+    /* Red */
+}
+
+[data-mood="excited"] {
+    background-color: #FF69B4;
+    /* Pink */
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    font-size: 0.8rem;
+    color: #888;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mood-icons i {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .mood-icons i {
+        font-size: 1.5rem;
+    }
+}
